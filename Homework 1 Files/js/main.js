@@ -73,6 +73,12 @@ Use the arc method
     if(ctx2){
         ctx2.strokeStyle = "black";
         ctx2.lineWidth =5;
+        ctx2.fillStyle = "red";
+        
+        ctx2.beginPath();
+        ctx2.arc(50,50,20,0,(360/180)*Math.PI,true);
+        ctx2.fill();
+        ctx2.stroke();
         
     }
 
@@ -129,7 +135,82 @@ Do not overlap any other object.
     var canvasFour = document.getElementById("Canvas4");
     var ctx4 = canvasFour.getContext("2d");
     
-    if(ctx4){}
+    if(ctx4){
+    
+        ctx4.strokeStyle = "pink";
+        ctx4.lineWidth = 4;
+        ctx4.fillStyle= "orange";
+        
+        ctx4.beginPath();
+        ctx4.arc(200,150,100,0,1*Math.PI,true)
+        ctx4.stroke();
+        ctx4.fill();
+        
+        ctx4.fillStyle= "lightgrey";
+        
+        ctx4.beginPath();
+        ctx4.arc(125,150,25,0,1*Math.PI,true)
+        ctx4.stroke();
+        ctx4.fill();
+        
+        ctx4.beginPath();
+        ctx4.arc(175,150,25,0,1*Math.PI,true)
+        ctx4.stroke();
+        ctx4.fill();
+        
+        ctx4.beginPath();
+        ctx4.arc(225,150,25,0,1*Math.PI,true)
+        ctx4.stroke();
+        ctx4.fill();
+        
+        ctx4.beginPath();
+        ctx4.arc(275,150,25,0,1*Math.PI,true)
+        ctx4.stroke();
+        ctx4.fill();
+        
+        ctx4.strokeStyle = "black";
+        ctx4.fillStyle = "yellow";
+        
+        ctx4.beginPath();
+        ctx4.moveTo(325,150);
+        ctx4.bezierCurveTo(400,5,500,5,575,150);
+        ctx4.stroke();
+        ctx4.fill();
+        
+        ctx4.fillStyle = "lightgrey";
+        
+        ctx4.beginPath();
+        ctx4.moveTo(325,150);
+        ctx4.bezierCurveTo(350,100,365,100,375,150);
+        ctx4.stroke();
+        ctx4.fill();
+        
+        ctx4.beginPath();
+        ctx4.moveTo(375,150);
+        ctx4.bezierCurveTo(390,100,415,100,425,150);
+        ctx4.stroke();
+        ctx4.fill();
+        
+        ctx4.beginPath();
+        ctx4.moveTo(425,150);
+        ctx4.bezierCurveTo(450,100,465,100,475,150);
+        ctx4.stroke();
+        ctx4.fill();
+        
+        ctx4.beginPath();
+        ctx4.moveTo(475,150);
+        ctx4.bezierCurveTo(500,100,515,100,525,150);
+        ctx4.stroke();
+        ctx4.fill();
+        
+        ctx4.beginPath();
+        ctx4.moveTo(525,150);
+        ctx4.bezierCurveTo(540,100,555,100,575,150);
+        ctx4.stroke();
+        ctx4.fill();
+    
+    
+    }
     
 
 /*******************************************
@@ -144,7 +225,14 @@ Draw text into your canvas.  It can said whatever you would like in any color.
     var canvasFive = document.getElementById("Canvas5");
     var ctx5 = canvasFive.getContext("2d");
     
-    if(ctx5){}
+    if(ctx5){
+    
+    var theString = "I an writing on the Canvas.";
+        
+        ctx5.font = "25pt Century Gothic";
+        ctx5.fillStyle = "Red";
+        ctx5.fillText(theString,100,100); 
+    }
     
 
 /*******************************************
@@ -165,7 +253,17 @@ Reminder to use the drawImage method for all 3 of the ways.
     var canvasSix = document.getElementById("Canvas6");
     var ctx6 = canvasSix.getContext("2d");
     
-    if(ctx6){}
+    if(ctx6){
+        
+        var image1 = document.getElementById("image1");
+    
+        ctx6.drawImage(image1,0,0);
+        
+        ctx6.drawImage(image1,0, 1100, 250, 250)
+        
+        ctx6.drawImage(image1, 700, 300, 150, 100, 300, 1100, 200, 150);
+    
+    }
     
 
 
@@ -185,9 +283,82 @@ You must use at least 3 different methods.
     var canvasSeven = document.getElementById("Canvas7");
     var ctx7 = canvasSeven.getContext("2d");
     
-    if(ctx7){}
+    if(ctx7){
     
-
+    
+    var theString = "I am at a loss for a scene to create. ";
+        
+        ctx7.font = "25pt Century Gothic";
+        ctx7.fillStyle = "Blue";
+        ctx7.fillText(theString,100,800); 
+    
+        
+        ctx7.strokeStyle = "black";
+        ctx7.fillStyle = "yellow";
+        
+        ctx7.beginPath();
+        ctx7.moveTo(325,150);
+        ctx7.bezierCurveTo(400,5,500,5,575,150);
+        ctx7.stroke();
+        ctx7.fill();
+        
+        ctx7.fillStyle = "lightgrey";
+        
+        ctx7.beginPath();
+        ctx7.moveTo(325,150);
+        ctx7.bezierCurveTo(350,100,365,100,375,150);
+        ctx7.stroke();
+        ctx7.fill();
+        
+        ctx7.beginPath();
+        ctx7.moveTo(375,150);
+        ctx7.bezierCurveTo(390,100,415,100,425,150);
+        ctx7.stroke();
+        ctx7.fill();
+        
+        ctx7.beginPath();
+        ctx7.moveTo(425,150);
+        ctx7.bezierCurveTo(450,100,465,100,475,150);
+        ctx7.stroke();
+        ctx7.fill();
+        
+        ctx7.beginPath();
+        ctx7.moveTo(475,150);
+        ctx7.bezierCurveTo(500,100,515,100,525,150);
+        ctx7.stroke();
+        ctx7.fill();
+        
+        ctx7.beginPath();
+        ctx7.moveTo(525,150);
+        ctx7.bezierCurveTo(540,100,555,100,575,150);
+        ctx7.stroke();
+        ctx7.fill();
+    
+        
+        ctx7.strokeStyle = "red";
+        ctx7.lineWidth = 25;
+        
+        ctx7.lineJoin = "bevel";
+        
+        ctx7.beginPath();
+        ctx7.moveTo(300,500);
+        ctx7.lineTo(375,125);
+        ctx7.lineTo(450,500);
+        ctx7.lineTo(240,250);
+        ctx7.lineTo(510,250);
+        ctx7.lineTo(300,500);
+        ctx7.stroke();
+        
+        
+        ctx7.strokeStyle = "orange";
+        ctx7.fillStyle = "pink";        
+        ctx7.lineWidth = 10;
+        ctx7.strokeRect(300,500,290,400);
+        ctx7.fillRect(375,525,310,500);
+    
+    }
+    
+    
     
     
     

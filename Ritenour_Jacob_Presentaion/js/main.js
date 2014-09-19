@@ -1,4 +1,4 @@
-
+// part 1
 
 function DropDown(el) {
 				this.dd = el;
@@ -43,7 +43,7 @@ function DropDown(el) {
 
 			});
 
-
+//part 2
 function DropDown(el) {
 				this.dd = el;
 				this.initEvents();
@@ -71,7 +71,7 @@ function DropDown(el) {
 			});
 
 
-
+//Part 3
 			function DropDown(el) {
 				this.dd = el;
 				this.placeholder = this.dd.children('span');
@@ -115,7 +115,7 @@ function DropDown(el) {
 
 			});
 
-
+//Part 4
 
 			function DropDown(el) {
 				this.dd = el;
@@ -163,7 +163,7 @@ function DropDown(el) {
 			});
 
 
-
+//Part 5
 			function DropDown(el) {
 				this.dd = el;
 				this.initEvents();
